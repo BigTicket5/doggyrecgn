@@ -1,8 +1,9 @@
+import 'package:doggyrecgn/pages/doginit.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(DoggyrecgnApp());
 
-class MyApp extends StatelessWidget {
+class DoggyrecgnApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.amber,
       ),
-      home: DoggyPage(title: ''),
+      home: InitPage(),
     );
   }
 }
@@ -33,7 +34,7 @@ class _DoggyPageState extends State<DoggyPage> {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
       // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
+      // _counter without calling setState(), then the build method would not be  
       // called again, and so nothing would appear to happen.
       _counter++;
     });
